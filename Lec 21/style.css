@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  width: 80%;
+  padding-top: 50px;
+
+  margin: auto;
+  margin-top: 100px;
+}
+
+.t {
+  font-size: 100px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.b {
+  color: #111828;
+}
+
+.b1 {
+  color: #5147db;
+}
+
+.r{
+    margin-top: 80px
+}
+
+a {
+  padding: 15px 15px;
+  font-size: 20px;
+  color: white;
+  background-color: #5046e5;
+  text-decoration: none;
+  border-radius: 4px;
+  text-align: center;
+}
+
+a:hover{
+    background-color: #3528e2;
+    
+}

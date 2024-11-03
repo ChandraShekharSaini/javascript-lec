@@ -1,0 +1,29 @@
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.theme1 {
+  background-color: white;
+  color: black;
+}
+
+.theme2 {
+  background-color: black;
+}
+
+
+
+.navTheme-Dark {
+  background-color: black;
+}
+
+.navTheme-Light {
+    background-color: white;
+    color: black;
+  }
+.fa-solid {
+  color: white;
+}
+
+

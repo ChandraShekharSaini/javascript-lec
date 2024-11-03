@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right, orange, yellow, royalblue);
+      }
+
+      .box {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+
+        width: 100px;
+        margin: 300px auto;
+      }
+
+      button {
+        padding: 10px 15px;
+        font-size: 20px;
+      }
+
+      .cnValue {
+        font-size: 30px;
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <button class="reduce">-</button>
+      <div class="cnValue">0</div>
+      <button class="increase">+</button>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

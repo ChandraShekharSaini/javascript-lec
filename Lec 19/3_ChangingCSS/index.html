@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      nav {
+        width: 100%;
+        height: 60px;
+
+      }
+
+      nav {
+        display: grid;
+        grid-template-columns: 20% 70%;
+        grid-template-rows: 100%;
+        align-items: center;
+      }
+
+      .logo {
+        grid-column: 1/2;
+        grid-row: 1/2;
+      }
+
+      .links {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        margin-left: 300px;
+
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .nav a {
+        text-decoration: none;
+         color: white;
+        font-size: 18px;
+      }
+
+      .logo {
+        width: 200px;
+        height: 40px;
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ519wOBigcYRo_ghsot73dmgzfX7HHGgGovg&s');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .nav .container {
+        width: 90%;
+        height: 500px;
+        border: 1px solid red;
+        margin: auto;
+      }
+
+      .image-box {
+        width: 90%;
+        margin: auto;
+        height: 500px;
+        background-image: url('https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .button1,
+      .button2 {
+        border-radius: 50px;
+        width: 50px;
+        border: none;
+        background-color: rgb(240, 236, 236);
+        color: black;
+      }
+
+     
+    </style>
+  </head>
+  <body>
+    <nav class="navTheme-Dark">
+      <div class="logo"></div>
+      <div class="links">
+        <a class="target" href="">About</a>
+        <a class="target" href="">Services</a>
+        <a class="target" href="">Contact</a>
+        <a class="target" href="">History</a>
+        <button class="button1">Sign in</button>
+        <button class="button2">Sign up</button>
+        <i class="fa-solid fa-sun"></i>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="image-box"></div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
