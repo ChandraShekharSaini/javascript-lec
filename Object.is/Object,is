@@ -1,0 +1,14 @@
+
+let var1 = -0
+let var2 = 0
+
+console.log(var1 === var2) //true
+
+console.log(Object.is(var1 , var2))//false
+
+console.log("--------------------------------------------------------------------")
+
+let value = NaN
+console.log(value == value)//false
+
+console.log(Object.is(value , value)) //true
