@@ -3,8 +3,8 @@ let p1 = new Promise((resolve, reject) => {
     setTimeout(() => {
         console.log("First Promise is Resolve")
 
-        resolve(10)
-    }, 2000)
+        resolve({name:"Chnadra",age:20})
+    }, 1000)
 })
 
 let p2 = new Promise((resolve, reject) => {
@@ -12,7 +12,7 @@ let p2 = new Promise((resolve, reject) => {
 
         console.log("Secound Promise is Resolved")
         resolve(20)
-    }, 2000)
+    }, 500)
 })
 
 let p3 = new Promise((resolve, reject) => {
@@ -20,10 +20,10 @@ let p3 = new Promise((resolve, reject) => {
 
         console.log("Third Promise is Resolved")
         resolve(30)
-    }, 2000)
+    }, 3000)
 })
 
-let result = Promise.all([p1, p2, p3]).then((data) => {
+let result = Promise.race([p1, p2, p3]).then((data) => {
 
     console.log("Data",data) 
 

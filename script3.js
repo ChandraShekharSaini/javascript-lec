@@ -1,19 +1,11 @@
-var a =20
-var x=50
-
-function outer(){
-    var x=40;
-    function inner(){
-        var a=30;
-        console.log(a)
-        x++;
-        console.log(x)
-    }
-    return inner
+const getData = {
+    name: "Chandra",
+    caste: "Sain",
+    age: 25,
+    occupation: "Software Engineer",
 }
 
-var p = outer()
-p()
-p()
-var x = outer()
-x()
+
+const { name: firstName, caste: LastName } = getData
+
+console.log(firstName , LastName)

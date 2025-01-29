@@ -1,18 +1,38 @@
 
-function Vehicle(company) {
+// function Vehicle(company) {
+
+// }
+
+
+// function Car(company, model) {
+
+// }
+
+
+// Car.prototype = Object.create(Vehicle.prototype);
+
+// Car.prototype.constructor = Car
+// Vehicle.prototype.constructor = Vehicle;
+
+
+
+
+function Vehical() {
+
+}
+
+function Car() {
 
 }
 
 
-function Car(company, model) {
+Car.prototype = Object.create(Vehical.prototype)
+Car.prototype.constructor = Car;
+Vehical.prototype.constructor = Vehical
 
-}
 
 
-Car.prototype = Object.create(Vehicle.prototype);
 
-Car.prototype.constructor = Car
-Vehicle.prototype.constructor = Vehicle;
 
 
 /* Console Details

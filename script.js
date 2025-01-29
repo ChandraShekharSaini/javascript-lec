@@ -11,11 +11,11 @@ class Parent extends GF {
         super(salary, job);
         this.name = name;
         this.age = age;
-    
-   
+
+
     }
-    
-   
+
+
 }
 
 class Child extends Parent {
@@ -33,3 +33,18 @@ console.log(data)
 
 
 
+
+
+
+
+const employee = {
+    name: 'Rajesh',
+    age: 30,
+};
+
+
+
+
+const newEmployee = employee;
+
+console.log(newEmployee == employee)
